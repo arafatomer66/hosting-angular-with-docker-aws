@@ -9,4 +9,5 @@ before_install:
 
 
 script:
-  - docker run -e CI=true 1528280/docker-angular npm run test
+  - timeout 30s docker run -e CI=true 1528280/docker-angular npm run test
+
